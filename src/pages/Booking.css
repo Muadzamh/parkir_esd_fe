@@ -1,0 +1,175 @@
+.booking-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+}
+
+.booking-body #booking-body-container{
+    display: flex;
+    flex-direction: column;
+    width: 1120px;
+    margin: auto;
+}
+
+.booking-body #name-page{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.booking-body #name-page #dua{
+    display: flex;
+    gap: 5px;
+    background: linear-gradient(90deg, #1ED760 47.32%, #107132 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.booking-body #content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.booking-body #reservation-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-body #reservation-field{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.booking-body #reservation-field div{
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-body #reservation-field #floor-spot{
+    display: flex;
+    gap: 26px;
+}
+
+.booking-body #reservation-field label{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.booking-body #reservation-field input, .booking-body #reservation-field select{
+    width: 324px;
+    height: 48px;
+    padding: 2px 0;
+    background-color: transparent;
+    color: #878787;
+    border-radius: 2px;
+    border: 1px solid #878787;
+}
+
+.booking-body #reservation-field #floor-spot input, .booking-body #reservation-field #floor-spot select, .booking-body #start select, .booking-body #end select{
+    width: 149px;
+}
+
+.booking-body #reservation-field #floor-spot select{
+    padding-left: 1px;
+}
+
+.booking-body #reservation-field #floor-spot select option[value="none"][disabled]{
+    display: none;
+}
+
+.booking-body #cars-slot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../asset/GridMobil.png");
+    position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 280px;
+}
+
+.booking-body #cars-slot div{
+    display: flex;
+}
+
+.booking-body #cars-slot button{
+    width: 200px;
+    height: 100px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.50);
+    transition: 0.2s;
+}
+
+.booking-body #cars-slot button:hover{
+    border-radius: 8px;
+    border: #03DABB solid;
+    color: #03DABB;
+    cursor: pointer;
+}
+
+.booking-body #gambar-mobil{
+    width: 180px;
+}
+
+.booking-body #start #start-container, .booking-body #end #end-container{
+    display: flex;
+    gap: 20px;
+}
+
+.booking-body #tombol{
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-body #tombol button{
+    width: 140px;
+    height: 48px;
+    border-radius: 35px;
+}
+
+.booking-body #cancle{
+    background-color: #FF3D00;
+    color: white;
+    transition: 0.5s;
+}
+
+.booking-body #book{
+    background-color: #13ae4c;
+    color: #03180B;
+    transition: 0.5s;
+}
+
+.booking-body #book:hover, .booking-body #cancle:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.booking-body #bawah img{
+    width: 330px;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-body #bawah #total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 10px 0 44px 0;
+}
+
+.booking-body #bawah a{
+    align-self: flex-end;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}

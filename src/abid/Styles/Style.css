@@ -1,0 +1,98 @@
+.gradient {
+    position: absolute;
+    margin-top: 0px;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, #0b4b22, #000);
+    opacity: 0.8;
+    z-index: 0;
+    height: 0%;
+}
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 128, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(50px); 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1; 
+}
+
+.jumbutron {
+    margin-top: 200px;
+    position: relative;
+    text-align: center;
+
+}
+
+/* Style.css */
+.jumbutronh3 {
+    background: linear-gradient(to right, white 50%, green 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbutronh3::before {
+    content: 'Welcome To Slotify';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    color: white;
+    overflow: hidden;
+}
+
+/* Style.css */
+.jumbutronh1 {
+    background: linear-gradient(to right, white 50%, green 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbutronp {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbutronp1 {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+.jumbutronp2 {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.container2{
+    margin-top: 170px;
+}
+
+.container3{
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+.about-us-page{
+    background: radial-gradient(circle at 50% 50%, #0b4b22, #000); 
+}

@@ -10,6 +10,9 @@ import HomeUser from "./pages/HomeUser";
 import Profile from "./pages/Profile";
 import History from "./pages/HIstory";
 import Booking from "./pages/Booking";
+import AboutUs from "./abid/Pages/AboutUs";
+import Promo from "./abid/Pages/Promotion";
+import DetailPromotion from "./abid/Pages/Detailpromo";
 
 const App = () => {
   return (
@@ -27,6 +30,10 @@ const App = () => {
         <Route path="/history" element={<History/>}/>
         <Route path="/booking" element={<Booking/>}/>
 
+        
+        <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/promo" element={<Promo />} />
+        <Route path="/promo-detail" element={<DetailPromotion />} />
       </Routes>
     </Router>
   );

@@ -71,7 +71,7 @@ const LoginHome = () => {
               <button id='button-login'>Login</button>
             </div>
 
-            <a href='1'>Forget your Password?</a>
+            <a id="forget-pass" href='1'>Forget your Password?</a>
             <p id='text-akhir'>Don’t have an account? <a href="1" onClick={(e) => {e.preventDefault(); navigate("/register")}}>Sign up for Slotify</a></p>
         </div>
       </form>

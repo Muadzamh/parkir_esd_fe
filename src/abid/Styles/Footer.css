@@ -1,0 +1,39 @@
+/* Styles/Footer.css */
+.footer {
+    color: #FFF; /* Warna teks putih */
+    padding: 20px; /* Ruang di dalam footer */ /* Teks berada di tengah */
+    width: 100%;
+    bottom: 0; /* Pastikan berada di bagian bawah */
+}
+/* body {
+    background: radial-gradient(circle at 50% 50%, #0b4b22, #000);
+} */
+
+.foot1 {
+    list-style: none;
+    font-weight: 400;
+    color: #878787;
+}
+
+.bolds {
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px; /* Jarak antar ikon */
+}
+
+.social-link {
+    color: #878787; /* Warna ikon */
+    font-size: 25px;
+    text-decoration: none; /* Menghapus underline */
+}
+
+.social-link:hover {
+    color: white; /* Warna saat hover */
+    transition: color 0.3s ease;
+}

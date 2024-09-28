@@ -1,6 +1,6 @@
 import "../../pages/Home.css";
 import { useNavigate } from "react-router-dom";
-import slotifyImage from "../../asset/Slotify.png"; 
+import slotifyImage from "../../asset/LogoSlotify.png"; 
 
 const HomeHeaderNavbar = () => {
     const navigate = useNavigate();
@@ -13,8 +13,8 @@ const HomeHeaderNavbar = () => {
                         <a id="logo-pencet" href="/"><img src={slotifyImage} alt="slotifyImage" /></a>
                     </div>
                     <div id="aboutus">
-                        <a href="#" onClick={(e) => {e.preventDefault(); navigate("/")}}>About us</a>
-                        <a href="#" onClick={(e) => {e.preventDefault(); navigate("/")}}>Promo</a>
+                        <a href="#" onClick={(e) => {e.preventDefault(); navigate("/about-us")}}>About us</a>
+                        <a href="#" onClick={(e) => {e.preventDefault(); navigate("/promo")}}>Promo</a>
                         <a href="#" onClick={(e) => {e.preventDefault(); navigate("/")}}>Booking</a>
                         <a href="#" onClick={(e) => {e.preventDefault(); navigate("/")}}>Location</a>
                     </div>

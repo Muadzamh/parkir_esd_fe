@@ -1,8 +1,32 @@
 import sidebarProfile from "../../asset/sidebarProfile2.png"
 import sidebarHistory from "../../asset/sidebarHistory2.png"
 import sidebarLogout from "../../asset/sidebarLogout.png"
+import Swal from "sweetalert2"
+import { useNavigate } from "react-router-dom"
 
 const HistoryBody = () => {
+    const navigate = useNavigate();
+
+    const LogOut = () => {
+        Swal.fire({
+            icon: "warning",
+            title: "Are you sure?",
+            text: "You will be logged out of Slotify",
+            showCancelButton: true,
+            confirmButtonText: "Logout!"
+        }). then((result) => {
+            if (result.isConfirmed){
+                Swal.fire({
+                    title: "Logout Success!",
+                    icon: "success"
+                });
+                localStorage.removeItem("token");
+                localStorage.removeItem("user");
+                navigate("/")
+            }
+        })
+    }
+
    return(
         <div className="profile-body">
             <div id="profile-body-container">
@@ -11,7 +35,7 @@ const HistoryBody = () => {
                     <div id="side-bar">
                         <a href="/profile"><img src={sidebarProfile} /></a>
                         <a href="/history"><img src={sidebarHistory} /></a>
-                        <a href="/profile"><img src={sidebarLogout} /></a>
+                        <a href="#" onClick={(e) => {e.preventDefault(); LogOut()}}><img src={sidebarLogout} /></a>
                     </div>
 
                     <div id="user-info">

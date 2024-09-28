@@ -1,0 +1,331 @@
+justify-content: center; /* ini buat si konten ke tengah */
+
+display: flex; //ngitutin dalam nya
+
+body {
+    background: black; /* Warna dasar background */
+}
+
+.gradient {
+    position: absolute;
+    margin-top: 0px;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, #0b4b22, #000);
+    opacity: 0.8;
+    z-index: 1; /* Pastikan gradient berada di bawah */
+}
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 128, 0, 0.3); /* Hijau dengan transparansi */
+    border-radius: 50%;
+    filter: blur(50px); /* Blur efek untuk lingkaran */
+    top: 0; /* Posisi di atas */
+    left: 50%; /* Pusatkan secara horizontal */
+    transform: translateX(-50%); /* Pusatkan secara horizontal */
+    z-index: 2; /* Pastikan circle berada di atas */
+}
+
+style.css
+body {
+    background: black; /* Warna dasar background */
+}
+
+.gradient {
+    position: absolute;
+    margin-top: 0px;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, #0b4b22, #000);
+    opacity: 0.6;
+    z-index: 1; /* Pastikan gradient berada di bawah */
+}
+
+.circle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #075b27; /* Hijau dengan transparansi */
+    border-radius: 40%;
+    filter: blur(100px); /* Blur efek untuk lingkaran */
+    top: 0; /* Posisi di atas */
+    left: 50%; /* Pusatkan secara horizontal */
+    transform: translateX(-50%); /* Pusatkan secara horizontal */
+    z-index: 2; /* Pastikan circle berada di atas */
+}
+
+
+.circle-1 {
+    top: 10%;
+    left: 15%;
+}
+
+.circle-2 {
+    bottom: 20%;
+    right: 20%;
+}
+
+navbar.css
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    opacity: 100;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+justify-content-between
+
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import '../Styles/Navbar.css';
+
+ <Navbar className="bg-body-tertiary justify-content-between">
+            <Container className="BrandTxt">
+                <Navbar.Brand>Slotify</Navbar.Brand>
+                <Form inline>
+                    <Row>
+                        <Col xs="auto">
+                            <Form.Control
+                                type="text"
+                                placeholder="Search"
+                                className=" mr-sm-2"
+                            />
+                        </Col>
+                        <Col xs="auto">
+                            <Button type="submit">Submit</Button>
+                        </Col>
+                    </Row>
+                </Form>
+            </Container>
+
+        </Navbar>
+
+        <Button pill type="submit">Submit</Button>
+
+
+  <Card/> {/* Memanggil komponen Card */}
+  <Button/> {/* Memanggil komponen Button */}
+
+
+ // components/Navbar.jsx
+ import Container from 'react-bootstrap/Container';
+ import Nav from 'react-bootstrap/Nav';
+ import Navbar from 'react-bootstrap/Navbar';
+ import NavDropdown from 'react-bootstrap/NavDropdown';
+ import '../Styles/Navbar.css';
+ import Button from 'react-bootstrap/Button';
+
+
+
+ import {Col} from "react-bootstrap";
+
+ const CustomNavbar = () => {
+     return (
+         <Navbar expand="lg" className="bg-body-tertiary yes">
+             <Container className="no">
+                 <Navbar.Brand href="#home">Slotify</Navbar.Brand>
+                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                 <Navbar.Collapse id="basic-navbar-nav">
+                     <Nav className="me-auto txt no">
+                         <Nav.Link className="txt1 nav-link" href="#home">About </Nav.Link>
+                         <Nav.Link className="txt2 nav-link" href="#link">Promo</Nav.Link>
+                         <Nav.Link className="txt3 nav-link" href="#home">Booking</Nav.Link>
+                         <Nav.Link href="#link">Location</Nav.Link>
+                     </Nav>
+                     {/* Tombol Sign Up dan Login */}
+                     <div className="d-flex gap-3">
+                         <Button variant="link" className="text-dark rounded-pill">Sign Up</Button>
+                         <Button  className={"rounded-pill log"}>Login</Button>
+                     </div>
+                 </Navbar.Collapse>
+             </Container>
+         </Navbar>
+
+
+     );
+ };
+
+ export default CustomNavbar;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.txt1 {
+    margin-right: 40px;
+    margin-left: 60px;
+}
+
+.txt2 {
+    margin-right: 40px;
+
+}
+
+.txt3 {
+    margin-right: 40px;
+}
+
+
+.LoginBTN {
+    border-radius: 50%;
+}
+
+.yes {
+    background: transparent; /* Ubah menjadi transparan */
+    background: black;
+    background: radial-gradient(circle at 50% 0%, #0b4b22, #000);
+}
+
+
+
+.yes .navbar-brand,
+.yes .nav-link,
+.yes .btn {
+    color: white !important; /* Warna teks putih */
+    opacity: 1 !important; /* Pastikan tidak ada pengaturan opasitas lain */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Efek bayangan untuk meningkatkan kecerahan */
+}
+
+.nav-link {
+    color: white !important; /* Warna teks putih cerah */
+}
+
+.log {
+    background-color: #1ED760 !important; /* Warna hijau */
+    border: none; /* Hapus border jika ada */
+    color: white; /* Warna teks putih */
+
+}
+
+kode update nav
+
+jsx
+// components/Navbar.jsx
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import '../Styles/Navbar.css';
+import Button from 'react-bootstrap/Button';
+
+
+
+import {Col} from "react-bootstrap";
+
+const CustomNavbar = () => {
+    return (
+        <Navbar expand="lg" className="bg-body-tertiary Pembungkus">
+            <Container className="no">
+                <Navbar.Brand href="#home" className="text-white">Slotify</Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+
+                    <Nav className="me-auto txt no">
+                        <Nav.Link className="txt1" href="#home"> <span className="no1">About</span></Nav.Link>
+                        <Nav.Link className="txt2" href="#link">Promo</Nav.Link>
+                        <Nav.Link className="txt3" href="#home">Booking</Nav.Link>
+                        <Nav.Link href="#link">Location</Nav.Link>
+                    </Nav>
+                    {/* Tombol Sign Up dan Login */}
+                    <div className="d-flex gap-3">
+                        <Button variant="link" className="text-white rounded-pill" href="#SignUp">Sign Up</Button>
+                        <Button  className={"rounded-pill log"} href="#Login">Login</Button>
+                    </div>
+
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
+
+
+    );
+};
+
+export default CustomNavbar;
+
+css nav
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.txt1 {
+    margin-right: 40px;
+    margin-left: 60px;
+}
+
+.txt2 {
+    margin-right: 40px;
+
+}
+
+.txt3 {
+    margin-right: 40px;
+}
+
+
+.LoginBTN {
+    border-radius: 50%;
+}
+
+.Pembungkus {
+    background: transparent; /* Ubah menjadi transparan */
+    background: radial-gradient(circle at 50% 0%, #0b4b22, #000);
+    z-index: 2; /*kunci agar terang*/
+    opacity: 100%;
+}
+
+
+
+.yes .navbar-brand,
+.yes .nav-link,
+.yes .btn {
+    color: white !important; /* Warna teks putih */
+    opacity: 1 !important; /* Pastikan tidak ada pengaturan opasitas lain */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Efek bayangan untuk meningkatkan kecerahan */
+}
+
+.nav-link {
+    color: white !important; /* Warna teks putih cerah */
+}
+
+.log {
+    background-color: #1ED760 !important; /* Warna hijau */
+}
+
+-----
+body {
+    background: radial-gradient(circle at 50% 50%, #0b4b22, #000); /* Sesuaikan dengan background halaman */
+}
+style={{ width: '18rem' }}
+
+className="txt2"
+
+background: linear-gradient(to right, white 50%, green 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;

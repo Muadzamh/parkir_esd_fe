@@ -5,7 +5,7 @@
 #home-header{
     width: 1112px;
     margin: auto;
-    margin-top: 22px;
+    margin-top: 12px;
 }
 
 #home-header-navbar{
@@ -14,6 +14,11 @@
     position: sticky;
     top: 0;
     /* border: #FFF solid; */
+    /* border: red solid; */
+}
+
+#home-header #logo-pencet img{
+    width: 180px;
 }
 
 #home-header-navbar #left{
@@ -35,6 +40,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    margin-top: 20px;
 }
 
 #home-header-navbar #left #aboutus a{
@@ -52,6 +58,7 @@
 #home-header-navbar #right{
     display: flex;
     align-items: center;
+    margin-top: 20px;
 }
 
 #home-header-navbar #sign-up{
@@ -224,8 +231,6 @@
     display: flex;
     flex-direction: column;
     align-self: end;
-    
-    
 }
 
 #home-body-content-left #content-2 #content-2-2{
@@ -252,9 +257,8 @@
 
 #home-body-content-left #content-2 #content-2-2 #text{
     display: flex;
+    justify-content: center;
     gap: 5px;
-    font-size: 16px;
-    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -264,6 +268,13 @@
 
 #home-body-content-left #content-2 #content-2-2 #text #satu{
     color: var(--Schemes-On-Primary, #1ED760);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#home-body-content-left #content-2 #content-2-2 #text #dua{
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #home-body-content-left #content-2 #content-2-2 p{
@@ -485,6 +496,7 @@
 .home-map{
     display: flex;
     flex-direction: column;
+    margin-bottom: 170px;
 }
 
 .home-map #home-map-container{

@@ -9,7 +9,7 @@ const Home = () => {
     return( 
         <div id="home-container">
             <HomeHeader/>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
             <HomeMap/>
             <HomeBody/>
             <SlotifyPartner/>

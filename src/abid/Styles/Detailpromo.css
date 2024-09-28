@@ -1,0 +1,21 @@
+.textbesar {
+    color: white; /* Mengatur warna teks menjadi putih */
+    font-weight: 200;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text1 {
+    color: #BEBEBE; /* Mengatur warna teks menjadi putih */
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+.textputih {
+    color: white;
+}
+
+.atasan {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}

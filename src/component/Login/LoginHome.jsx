@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import React, {useState} from "react";
 import axios from "axios";
 import Swal from 'sweetalert2';
+import { API_URL } from "../Auth/API_URL";
 
 
 const LoginHome = () => {
@@ -18,7 +19,7 @@ const LoginHome = () => {
     
     e.preventDefault();
     try {
-      await axios.post("https://07a4-103-194-172-70.ngrok-free.app/login", {
+      await axios.post(`${API_URL}/login`, {
         email: email,
         password: password
       }).then((responses) => {

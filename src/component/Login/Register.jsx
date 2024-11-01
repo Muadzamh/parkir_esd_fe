@@ -3,6 +3,7 @@ import "../../pages/Login.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { API_URL } from "../Auth/API_URL";
 
 const Register = () => {
     const navigate = useNavigate();
@@ -22,7 +23,7 @@ const Register = () => {
     const SignUp = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("https://07a4-103-194-172-70.ngrok-free.app/register", {
+                await axios.post(`${API_URL}/register`, {
                 fullName: name,
                 email: email,
                 password: password,
@@ -31,7 +32,17 @@ const Register = () => {
                 dateOfBirth: date,
                 gender: gender,
                 role: role
-            }).then((response) => {console.log(response); navigate("/login")});
+            }).then((response) => {
+                console.log(response); 
+                navigate("/login");
+                Swal.fire({
+                    position: "top",
+                    icon: "success",
+                    title: `Berhasil Register!`,
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            });
             
         } catch (error) {
             if (error.response){
